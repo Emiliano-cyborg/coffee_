@@ -1,0 +1,216 @@
+/* Reset de estilos */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Estilos generales */
+  body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    text-align: center;
+  }
+  
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Estilos del header */
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+  }
+  .container {
+    display: flex;
+    align-items: center; /* Alineación vertical */
+    flex-wrap: wrap;
+  }
+  
+  .logo {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px; /* Margen derecho para separar el logo del título */
+  }
+  
+  h1 {
+    flex-basis: 100%; /* Ocupar el espacio restante */
+    margin-right: 10px; /* Margen derecho para separar el título del nav */
+  }
+  
+  nav ul {
+    display: flex; /* Mostrar la lista como una fila */
+    list-style-type: none;
+    justify-content: center; /* Añadimos justify-content: center para centrar los elementos en el eje horizontal */
+    flex-basis: 100%; /* Cambiamos flex-grow a flex-basis para que la lista ocupe todo el ancho en pantallas pequeñas */
+    margin-top: 10px;
+  }
+  
+  nav li {
+    margin-right: 10px; /* Margen derecho entre los elementos de la lista */
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  nav a:hover {
+    color: #777;
+  }
+  
+  h1 {
+    font-size: 36px;
+  }
+  
+  nav ul {
+    list-style-type: none;
+  }
+  
+  nav li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  nav a:hover {
+    color: #ccc;
+  }
+  .logo {
+    width: 40px; /* Ancho del logo */
+    height: 40px; /* Alto del logo */
+  }
+  
+  
+  /* Estilos de la sección de inicio */
+  .hero {
+    background-image: url('hero.jpg');
+    background-size: cover;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+  }
+  
+  p {
+    font-size: 24px;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+  
+  .boton {
+    padding: 15px 30px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    transition: background-color 0.3s;
+  }
+  
+  .boton:hover {
+    background-color: #555;
+  }
+  
+  /* Estilos de la sección del menú */
+/* Estilos del menú en modo responsive */
+#N-menu {
+  text-align: center;
+}
+
+#menu {
+    text-align: center; /* Añadimos text-align: center para centrar los elementos en el eje horizontal */
+    background-color: #f8f8f8;
+    padding: 60px 0;
+  }
+  
+  .container {
+    width: 100%;
+    display: inline-block; /* Añadimos display: inline-block para que el contenedor tenga el ancho del contenido y quede centrado */
+  }
+  
+  .menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 20px;
+    justify-items: center; /* Añadimos justify-items: center para centrar los elementos del grid en el eje horizontal */
+  }
+  
+  /* El resto de las reglas CSS se mantienen igual */
+  
+  
+  .menu-item {
+    box-shadow: #333 30px;
+    margin-bottom: 20px;
+  }
+  
+  .menu-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    margin-right: 20px;
+    transition: transform 0.3s ease;
+  }
+  
+  .menu-item h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .menu-item p {
+    font-size: 18px;
+    color: #777;
+  }
+  
+  .menu-item img:hover {
+    transform: translateY(-10px);
+  }
+  
+  
+  
+  /* Estilos de hover en la imagen del menú en modo responsive */
+  .menu-item img:hover {
+    transform: translateY(-10px);
+  }
+  
+  
+
+  /* Estilos de la sección de nosotros */
+  #nosotros {
+    padding: 60px 0;
+  }
+  
+  /* Estilos de la sección de contacto */
+  #contacto {
+    background-color: #eee;
+    padding: 60px 0;
+  }
+  
+  h2, p {
+    text-align: center;
+  }
+  
+  /* Estilos del menú en modo responsive */
+@media (max-width: 768px) {
+    .menu-grid {
+      grid-template-columns: repeat(1, 1fr); /* Cambiamos a una sola columna en dispositivos con ancho máximo de 767px */
+    }
+    
+    .menu-item {
+      margin-right: 0; /* Quitamos el margen derecho en dispositivos con ancho máximo de 767px */
+    }
+    
+  }
+  
