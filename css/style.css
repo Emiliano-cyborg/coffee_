@@ -24,18 +24,18 @@ body{
     color: #fff;
     transform: translate(-50%,-50%);
     font-size: 8em;
-    left: 23px;
+    left: 50px;
 }
 
 .content h2:nth-child(1)
 {
     color: transparent;
-    -webkit-text-stroke: 2px #552b08;
+    -webkit-text-stroke: 2px #c98349;
     
 }
 .content h2:nth-child(2)
 {
-    color: #552b08;
+    color: #883f04;
     animation: animate 4s ease-in-out infinite;
 }
 
@@ -57,10 +57,20 @@ body{
     width: 100px; 
     position: relative;
     bottom: -230px;
-    right: 23px;
+    right: 0px;
     animation: saltar 0.5s ease-in-out infinite;
 }
 @keyframes saltar {
     0%, 100% { transform: translateY(0); }
     50% { transform: translateY(-20px); }
+}
+
+@media (max-width: 768px) {
+    .content h2 {
+        font-size: 5em;
+    }
+    
+    .semilla img {
+        width: 70px;
+    }
 }
