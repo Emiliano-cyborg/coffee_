@@ -40,6 +40,9 @@ body, h1, h2, h3, p, ul, li {
     flex-basis: 100%; 
     margin-right: 10px; 
   }
+  .container h1 span {
+    color: #883f04;
+}
   
   nav ul {
     display: flex; 
@@ -52,13 +55,14 @@ body, h1, h2, h3, p, ul, li {
   
   
   h1 {
-    font-size: 36px;
+    font-size: 46px;
   }
 
   
   nav li {
     display: inline;
     margin-right: 20px;
+    font-size: 34px;
   }
   
   nav a {
@@ -192,21 +196,25 @@ body, h1, h2, h3, p, ul, li {
   
 
   @media screen and (max-width: 768px) {
-    .container {
+    .container .navbar {
       justify-content: center;
-      padding-bottom: 15px;
+      padding-bottom: 40px;
+      margin: 500px;
     }
   
-    nav ul {
+    .navbar ul {
       display: flex; 
+      font-size: 15px;
     }
+    
   
-    nav li {
+    .navbar li {
       margin-right: 5px;
+      font-size: 130px;
     }
   
     h1 {
-      font-size: 24px; 
+      font-size: 30px; 
     }
     .container {
       width: 100%;
@@ -216,19 +224,20 @@ body, h1, h2, h3, p, ul, li {
       justify-content: space-between; 
     }
     
-    nav ul {
+    .navbar ul {
       flex-basis: 100%;
       margin-top: 10px;
       display: none; 
     }
     
-    nav li {
+    .navbar li {
       margin-right: 10px;
     }
     
-    nav a {
+    .navbar a {
       text-decoration: none;
       color: #333;
+      size: 150px;
     }
   }
   
