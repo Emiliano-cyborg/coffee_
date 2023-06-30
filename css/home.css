@@ -5,7 +5,7 @@ body, h1, h2, h3, p, ul, li {
     box-sizing: border-box;
   }
   
-  /* Estilos generales */
+
   body {
     font-family: 'Poppins', sans-serif;
     color: #333;
@@ -13,12 +13,12 @@ body, h1, h2, h3, p, ul, li {
   }
   
   .container {
-    max-width: 960px;
+    max-width: 570px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 40px;
   }
   
-  /* Estilos del header */
+
   header {
     background-color: #333;
     color: #fff;
@@ -26,49 +26,35 @@ body, h1, h2, h3, p, ul, li {
   }
   .container {
     display: flex;
-    align-items: center; /* Alineación vertical */
+    align-items: center; 
     flex-wrap: wrap;
   }
   
   .logo {
     width: 40px;
     height: 40px;
-    margin-right: 10px; /* Margen derecho para separar el logo del título */
+    margin-right: 10px;
   }
   
   h1 {
-    flex-basis: 100%; /* Ocupar el espacio restante */
-    margin-right: 10px; /* Margen derecho para separar el título del nav */
+    flex-basis: 100%; 
+    margin-right: 10px; 
   }
   
   nav ul {
-    display: flex; /* Mostrar la lista como una fila */
+    display: flex; 
     list-style-type: none;
-    justify-content: center; /* Añadimos justify-content: center para centrar los elementos en el eje horizontal */
-    flex-basis: 100%; /* Cambiamos flex-grow a flex-basis para que la lista ocupe todo el ancho en pantallas pequeñas */
+    justify-content: center; 
+    flex-basis: 100%; 
     margin-top: 10px;
   }
   
-  nav li {
-    margin-right: 10px; /* Margen derecho entre los elementos de la lista */
-  }
   
-  nav a {
-    text-decoration: none;
-    color: #333;
-  }
-  
-  nav a:hover {
-    color: #777;
-  }
   
   h1 {
     font-size: 36px;
   }
-  
-  nav ul {
-    list-style-type: none;
-  }
+
   
   nav li {
     display: inline;
@@ -78,19 +64,20 @@ body, h1, h2, h3, p, ul, li {
   nav a {
     color: #fff;
     text-decoration: none;
-    transition: color 0.3s;
+    transition: color 0.3s ease, font-size 0.3s ease; 
+    cursor: pointer;
   }
   
   nav a:hover {
-    color: #ccc;
+    color: #6e2406;
   }
   .logo {
-    width: 40px; /* Ancho del logo */
-    height: 40px; /* Alto del logo */
+    width: 40px;
+    height: 40px; 
   }
   
   
-  /* Estilos de la sección de inicio */
+  
   .hero {
     background-image: url('hero.jpg');
     background-size: cover;
@@ -124,31 +111,32 @@ body, h1, h2, h3, p, ul, li {
     background-color: #555;
   }
   
-  /* Estilos de la sección del menú */
-/* Estilos del menú en modo responsive */
+
 #N-menu {
   text-align: center;
 }
 
 #menu {
-    text-align: center; /* Añadimos text-align: center para centrar los elementos en el eje horizontal */
+    text-align: center; 
     background-color: #f8f8f8;
     padding: 60px 0;
   }
   
-  .container {
-    width: 100%;
-    display: inline-block; /* Añadimos display: inline-block para que el contenedor tenga el ancho del contenido y quede centrado */
-  }
+ .container {
+  width: 100%;
+  display: flex;
+  align-items: center; 
+  justify-content: center; 
+}
   
   .menu-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 20px;
-    justify-items: center; /* Añadimos justify-items: center para centrar los elementos del grid en el eje horizontal */
+    justify-items: center; 
   }
   
-  /* El resto de las reglas CSS se mantienen igual */
+  
   
   
   .menu-item {
@@ -179,20 +167,17 @@ body, h1, h2, h3, p, ul, li {
   }
   
   
-  
-  /* Estilos de hover en la imagen del menú en modo responsive */
+
   .menu-item img:hover {
     transform: translateY(-10px);
   }
   
   
 
-  /* Estilos de la sección de nosotros */
   #nosotros {
     padding: 60px 0;
   }
-  
-  /* Estilos de la sección de contacto */
+
   #contacto {
     background-color: #eee;
     padding: 60px 0;
@@ -202,15 +187,58 @@ body, h1, h2, h3, p, ul, li {
     text-align: center;
   }
   
-  /* Estilos del menú en modo responsive */
-@media (max-width: 768px) {
-    .menu-grid {
-      grid-template-columns: repeat(1, 1fr); /* Cambiamos a una sola columna en dispositivos con ancho máximo de 767px */
+
+ 
+  
+
+  @media screen and (max-width: 768px) {
+    .container {
+      justify-content: center;
+      padding-bottom: 15px;
+    }
+  
+    nav ul {
+      display: flex; 
+    }
+  
+    nav li {
+      margin-right: 5px;
+    }
+  
+    h1 {
+      font-size: 24px; 
+    }
+    .container {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap; 
+      align-items: center;
+      justify-content: space-between; 
     }
     
-    .menu-item {
-      margin-right: 0; /* Quitamos el margen derecho en dispositivos con ancho máximo de 767px */
+    nav ul {
+      flex-basis: 100%;
+      margin-top: 10px;
+      display: none; 
     }
     
+    nav li {
+      margin-right: 10px;
+    }
+    
+    nav a {
+      text-decoration: none;
+      color: #333;
+    }
   }
+  
+  footer {
+    transition: color 0.3s ease, font-size 0.3s ease; 
+    cursor: pointer; 
+}
+
+footer:hover {
+    color: red; 
+    font-size: 1.2em; 
+}
   

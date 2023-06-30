@@ -38,6 +38,9 @@ body{
     color: #883f04;
     animation: animate 4s ease-in-out infinite;
 }
+.h1 span{
+    color: #883f04;
+}
 
 @keyframes animate {
     0%, 100%{
