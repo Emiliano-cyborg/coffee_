@@ -191,7 +191,35 @@ body, h1, h2, h3, p, ul, li {
     text-align: center;
   }
   
-
+  .redes-sociales {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .redes-sociales-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #6b676d;
+    color: beige;
+    margin: 0 10px;
+    transition: transform 0.3s, background-color 0.3s;
+  }
+  
+  .redes-sociales-link:hover {
+    background-color: #3b1358;
+    transform: scale(1.1);
+  }
+  
+  .redes-sociales-link i {
+    font-size: 24px;
+  }
+  
  
   
 
